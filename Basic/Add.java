@@ -1,21 +1,21 @@
-import java.util.Scanner;
+import java.io.*;
 
 class Add
 {
-    public static void main(String [] args)
+    public static void main(String args[])throws Exception
     {
-        int sum;
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter a value");
-        int a = input.nextInt();
-
-        System.out.print("Enter b value");
-        int b = input.nextInt();
-        sum= a+b;
+        InputStreamReader r =new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(r);        
         
-        System.out.println("Total: "+ sum);
-        input.close();
-    }
+        System.out.println("Addition of number:");
+
+        System.out.println("Enter one number:");
+        int a=Integer.parseInt(br.readLine());
+
+        System.out.println("Enter second number:");
+        int b = Integer.parseInt(br.readLine());
+        int c =a+b;
+        System.out.println("Your Output is :" +c);
+   }
 
 }

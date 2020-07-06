@@ -12,7 +12,7 @@ class Tables
         System.out.print("Enter times:");
         times = input.nextInt();
 
-        for(int i=0;i<times;i++)
+        for(int i=0;i<=times;i++)
         {
             System.out.println(table+" * "+i+" = "+table*i);
         }
