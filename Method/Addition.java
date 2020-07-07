@@ -62,7 +62,7 @@ public class Addition
 
             fun(a,b,c,d);
         }
-        else
+        if(number>4)
         {
             System.out.println("Upto only 4 numbers not more than that...");
         }
