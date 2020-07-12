@@ -34,7 +34,10 @@ public class Internal {
 
   public void getgrade() {
     int k = 1;
-    while (k <= 21) { System.out.print("*"); k++; }
+    while (k <= 21) {
+      System.out.print("*");
+      k++;
+    }
     System.out.println();
 
     System.out.println("***Details***");
