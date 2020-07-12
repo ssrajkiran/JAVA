@@ -1,12 +1,11 @@
 import java.util.*;
 
-Public class InternalMarks
+public class InternalMarks
 {
 
-    Public static void main(String []args)
+    public static void main(String []args)
     {
         Internal ob1 = new Internal();
-        ob1.getmarks();
+        ob1.Getmark();
     }
 }
-
