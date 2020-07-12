@@ -1,5 +1,5 @@
-import java.util.Scanner;
-import java.util.InputMismatchException;
+import java.util.*;
+
  class AgeError
 {
     static Scanner input = new Scanner(System.in);
