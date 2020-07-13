@@ -30,7 +30,7 @@ class result{
     public void getresult() {
         
     
-        System.out.println("Area of rectangle:" + 2 * num1 * num2);
+        System.out.println("Area of rectangle:" +num1* num2);
         System.out.println("Area of square:" + 4 * num1 * num1);
 
         while (num1 != num2) {
