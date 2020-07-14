@@ -31,13 +31,11 @@ interface Shapes {
 
 class Square implements Shapes {
 
-
     @Override
     public int getArea(int a, int b) {
         return a * a;
     }
 
-   
 }
 
 class Rectangle implements Shapes {
@@ -46,18 +44,5 @@ class Rectangle implements Shapes {
     public int getArea(int l, int b) {
         return l * b;
     }
-
-    
-
-}
-
-class Triangle implements Shapes {
-
-    @Override
-    public int getArea(int a, int b) {
-        return 1 / 2 * a * b;
-    }
-
-    
 
 }
