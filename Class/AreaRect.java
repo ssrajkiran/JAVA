@@ -31,6 +31,7 @@ interface Shapes {
 
 class Square implements Shapes {
 
+
     @Override
     public int getArea(int a, int b) {
         return a * a;
