@@ -1,17 +1,16 @@
 import java.util.*;
 
-public class Asteriods {
+public class Pattern_one {
     static Scanner input = new Scanner(System.in);
     public static int n;
 
     static void diagram() {
-        int sum=1;
+    
         for (int r = 1; r <= n; r++) 
         {
           for(int s= 1;s<=r;s++)
           {
-              System.out.print(sum);
-              sum++;
+              System.out.print("*");
 
           }
           System.out.println();
