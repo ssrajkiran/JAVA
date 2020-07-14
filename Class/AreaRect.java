@@ -26,7 +26,7 @@ public class AreaRect {
 
 interface Shapes {
     int getArea(int a, int b);
-    int getPerimeter(int a,int b);
+
 }
 
 class Square implements Shapes {
@@ -36,12 +36,7 @@ class Square implements Shapes {
         return a * a;
     }
 
-    @Override
-    public int getPerimeter(int a, int b) {
-        // TODO Auto-generated method stub
-        return 0;
-    }
-
+   
 }
 
 class Rectangle implements Shapes {
@@ -51,11 +46,7 @@ class Rectangle implements Shapes {
         return l * b;
     }
 
-    @Override
-    public int getPerimeter(int a, int b) {
-        // TODO Auto-generated method stub
-        return 0;
-    }
+    
 
 }
 
@@ -66,10 +57,6 @@ class Triangle implements Shapes {
         return 1 / 2 * a * b;
     }
 
-    @Override
-    public int getPerimeter(int a, int b) {
-        // TODO Auto-generated method stub
-        return 0;
-    }
+    
 
 }
