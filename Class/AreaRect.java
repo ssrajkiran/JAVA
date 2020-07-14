@@ -1,46 +1,75 @@
 import java.util.*;
 
-class AreaRect extends result {
-        public static void main(String [] args)
-    {
-    result ob1 = new result();
-    ob1.setresult();
-    ob1.getresult();
-    
+public class AreaRect {
+    public static void main(String[] args) {
+        int num1, num2;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Area of square and rectangle:");
+            System.out.println("Enter the number:");
+            num1 = sc.nextInt();
+            System.out.println("Enter the number:");
+            num2 = sc.nextInt();
+        }
+
+        Shapes shape;
+        if (num1 == num2) {
+            shape = new Square();
+        } else {
+            shape = new Rectangle();
+        }
+
+        System.out
+                .println(String.format("Selected shape is %s Area is %s", shape.getClass(), shape.getArea(num1, num2)));
     }
+
 }
 
-class result{
-     
-    static Scanner input = new Scanner (System.in);
-    private int num1;
-    private int num2;
+interface Shapes {
+    int getArea(int a, int b);
+    int getPerimeter(int a,int b);
+}
 
-    
+class Square implements Shapes {
 
-    
-    public void setresult() {
-        System.out.println("Area of square and rectangle:");
-        System.out.println("Enter the number:");
-        num1 = input.nextInt();
-        System.out.println("Enter the number:");
-        num2 = input.nextInt();
+    @Override
+    public int getArea(int a, int b) {
+        return a * a;
     }
 
-    public void getresult() {
-        
-        System.out.println("Area of square:" + num1 * num1);
-        System.out.println("Area of rectangle:" +num1* num2);
-        
+    @Override
+    public int getPerimeter(int a, int b) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 
-        while (num1 != num2) {
-            System.out.println("Its rectangle");
-            break;
-        }
-        for (; num1 == num2;) {
-            System.out.println("Its square");
-            break;
-        }
+}
+
+class Rectangle implements Shapes {
+
+    @Override
+    public int getArea(int l, int b) {
+        return l * b;
+    }
+
+    @Override
+    public int getPerimeter(int a, int b) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+}
+
+class Triangle implements Shapes {
+
+    @Override
+    public int getArea(int a, int b) {
+        return 1 / 2 * a * b;
+    }
+
+    @Override
+    public int getPerimeter(int a, int b) {
+        // TODO Auto-generated method stub
+        return 0;
     }
 
 }
