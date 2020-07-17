@@ -8,11 +8,12 @@ public class CheckExists {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        String adString = "/mnt/c/Users/ssrah/Kiran/JAVA/Files/NioPackage/hello";
+        String adString = "Filepath";
         Path path = Paths.get(adString);
         if (Files.exists(path)) {
             System.out.println("Already exists");
-            return;
+         return;
+                     
         } else {
             System.out.println("Your directory is not available.");
             System.out.println("1.To Create 2.Exit");
