@@ -11,7 +11,7 @@ public class Power {
         int n = input.nextInt();
         System.out.println("Enter the power of a number:");
         int p = input.nextInt();
-        //System.out.println(Math.pow(n, p));
+        // System.out.println(Math.pow(n, p));
         for (int i = p; i != 0; --i) {
             result = result * n;
         }
