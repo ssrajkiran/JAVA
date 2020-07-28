@@ -4,9 +4,9 @@ public class Addstatic {
     static 
     {
         System.out.println("-------------");
-        System.out.println("Static method is running:");
+        System.out.println("Static block is running:");
         System.out.println("Addition :");
-        System.out.println("Static method end");
+        System.out.println("Static block end");
         System.out.println("-------------");
     }
     public static void main(String[] args)
