@@ -27,6 +27,7 @@ public class WriteFile
             System.out.println("your file exists:");
             System.out.println("Enter the input to store:");
             String write =input.nextLine();
+            
             Files.write(path,(write + System.lineSeparator()).getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND);
             System.out.println("Your inputs successfully written:");
            
